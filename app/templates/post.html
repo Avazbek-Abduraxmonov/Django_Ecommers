@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    {% for i in post_add %}
+        <div class="card container mt-5">
+            <div class="card-header">
+            {{i.created_at}}
+            </div>
+            <div class="card-body">
+            <h5 class="card-title">{{i.title}}</h5>
+            <p class="card-text">{{i.title}}</p>
+            <a href="#" class="btn btn-primary">Batafsil</a>
+            </div>
+        </div>
+    {% endfor %}
+
+
+{% endblock %}
